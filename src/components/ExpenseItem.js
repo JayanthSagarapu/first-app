@@ -1,17 +1,13 @@
 import "./ExpenseItem.css";
 
-function ExpenseItem() {
-  const expenseTitle = "Food";
-  const expenseAmount = 100;
-  const expenseLocation = "Vizag";
-
+function ExpenseItem(props) {
   return (
     <div className="expense-item">
       <div>Expense Item!!</div>
       <div className="expense-item__description">
-        <h2>{expenseTitle}</h2>
-        <h2>{expenseLocation}</h2>
-        <div className="expense-item__price">Rs{expenseAmount}</div>
+        <h2>{props.title}</h2>
+        <h2>{props.location}</h2>
+        <div className="expense-item__price">Rs {props.amount}</div>
       </div>
     </div>
   );
