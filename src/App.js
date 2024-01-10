@@ -1,6 +1,7 @@
-import Expenses from "./components/Expenses";
+import React from "react";
+import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+      <h2>Lets get started!!</h2>
       {expenses.map((expense) => (
         <Expenses
           title={expense.title}
@@ -63,6 +65,6 @@ function App() {
       ></ExpenseItem> */}
     </div>
   );
-}
+};
 
 export default App;
