@@ -5,3 +5,14 @@
     width : 50rem;
     max-width: 95%;
 }
+
+.deleteButton{
+        padding: 1rem;
+        color: white;
+        background-color: rgb(31,31,31);
+        margin: auto;
+        width : 50rem;
+        max-width: 15%; 
+        border-radius: 10px;
+        border-color: whitesmoke;
+}
